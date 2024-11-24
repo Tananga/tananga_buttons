@@ -5,7 +5,11 @@ import 'package:flutter/material.dart';
 class TanangaButtons {
   static Widget simpleButton({
     required String text,
+    required VoidCallback onPressed,
   }) {
-    return ElevatedButton(onPressed: () {}, child: Text(text));
+    return ElevatedButton(
+      onPressed: onPressed,
+      child: Text(text),
+    );
   }
 }
